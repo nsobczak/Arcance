@@ -10,16 +10,26 @@ image background c = "Arcance c.jpg"
 image background d = "Arcance d.jpg"
 image background e = "Arcance e.jpg"
 image background f = "Arcance f.jpg"
+image background g = "#ffffff"
+image background h = "#ffffff"
+image background i = "#ffffff"
+image background j = "#ffffff"
+image background k = "#ffffff"
 
 # Declare characters used by this game.
-define king = Character('King', color="#aaffc8")
+define king = Character('King', color="#6e6ef7")
+define queen = Character('Queen', color="#cc00b4")
 define mage = Character('Head mage', color="#c8ffc8")
+define ade = Character('Adelaide', color="#f96c9b")
+define unknown = Character('...', color="#5c5c5c")
+define oldLady = Character('Old lady', color="#4f3030")
 
 
 # The game starts here.
 label start:
 
-    scene background a
+    show background a
+    with Dissolve(1.0)
     "Once upon a time, in the magnificent kingdom of Arcance, lived a King and a Queen. \
     Both had just acceded to the throne after the death of the old King and they were greatly loved by their people."
 
@@ -43,22 +53,18 @@ label label_king_choice_menu:
     menu:
         "dance in a circle of dolmens during each of the full moon that would occur during the pregnancy, holding a crone of saffron.":
             $ king_choice = 1
-            jump king_choice
 
         "sacrifice three swans and pour their blood on the ground to appeal to his ancestors during the summer solstice.":
             $ king_choice = 2
-            jump king_choice
 
         "grind seven rubies  in the goddess of the Arcance’s lands’ temple as an offering.":
             $ king_choice = 3
-            jump king_choice
 
         "make his Queen drink elixirs of diluted occamy venom during each of the black moon of the pregnancy.":
             $ king_choice = 4
-            jump king_choice
 
 
-#======
+# ======
 label king_choice:
     scene background d
     "The King diligently carried out his task, hoping for the best."
@@ -72,7 +78,7 @@ label king_choice:
 
     if (king_choice == 1):
         mage "Congratulation your Majesty, it’s a girl!"
-        jump end
+
     else:
         mage "I am afraid that I have terrible news, your Majesty. The child was stillborn…"
 
@@ -82,11 +88,35 @@ label king_choice:
         jump label_king_choice_menu
 
 
+    scene background a
+    "The birth was celebrated in the whole kingdom for days. \
+    It was seen as a sign of hope, a bright light shining before the darker times to come… "
 
-#======
+    show black
+    with Dissolve(1.5)
+    $ renpy.pause(1.0)
+    hide text with dissolve
+
+    scene background a
+    with Dissolve(1.0)
+    "Years passed and with them went the peace and prosperity of the kingdom. \
+    Nevertheless, the child grew and learnt."
+
+    scene background g
+    "Adelaide was a beautiful child, with hairs as bright as flame and eyes as green as emeralds. \
+    Even so young she was already coveted by all the princes in the neighbours, a fact her father the King was very proud of."
+
+    "Until one day, she they were declared to be of age. \
+    However it was no time to party as the kingdom was under siege from all side…"
+
+    show black
+    with Dissolve(1.5)
+    $ renpy.pause(1.0)
+    hide text with dissolve
+    jump label_daughter_witch
+
+
+# ======
 label end:
     mage "At the end of the story, this is the end of the game."
-
-
-
     return
