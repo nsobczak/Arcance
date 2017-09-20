@@ -3,6 +3,7 @@
 # jump to 4 or 5
 label label_daughter_witch:
     scene background b
+
     ade "I hate this kingdom! \
     Why do they have to treat me as an ornement or a broodmare, just good enough to give to the highest bidder and produce children! \
     And then Mother and Father get upset because I do not accept the situation and follow all their order with a smile!"
@@ -23,7 +24,7 @@ label label_daughter_witch:
 
     unknown "Mmm, what an ambitious wish…"
     ade "Who is there?!"
-    unknown "Reassure yourself, child. It is only, I, an old Lady."
+    witch "Reassure yourself, child. It is only, I, an old Lady."
 
     menu:
         "You have no right to be here! How did you manage to get into the castle?":
