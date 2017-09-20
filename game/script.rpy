@@ -33,6 +33,7 @@ define ade = Character('Adelaide', color="#f96c9b", image="adelaide")
 define unknown = Character('...', color="#d0d5d7")
 define witch = Character('Old lady', color="#966c69", image="witch")
 define guard = Character('Guard', color="#849294")
+# $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 
 # The game starts here.
