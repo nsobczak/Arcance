@@ -15,14 +15,21 @@ image background h = "#ffffff"
 image background i = "#ffffff"
 image background j = "#ffffff"
 image background k = "#ffffff"
+image background darkLordLair = "Arcance dark lord lair.jpg"
+image background dragonCave = "Arcance dragon cave.jpg"
+image background princeCastle = "Arcance prince castle.jpg"
+
+image Character prince = "Arcance - prince avatar.png"
+
 
 # Declare characters used by this game.
 define king = Character('King', color="#6e6ef7")
 define queen = Character('Queen', color="#cc00b4")
 define mage = Character('Head mage', color="#c8ffc8")
 define ade = Character('Adelaide', color="#f96c9b")
-define unknown = Character('...', color="#5c5c5c")
-define oldLady = Character('Old lady', color="#4f3030")
+define unknown = Character('...', color="#d0d5d7")
+define witch = Character('Old lady', color="#966c69")
+define guard = Character('Guard', color="#849294")
 
 
 # The game starts here.
