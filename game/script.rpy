@@ -1,41 +1,61 @@
 ﻿# You can place the script of your game in this file.
+# TODO: find right image size
 
-# Declare images below this line, using the image statement.
-# eg. image eileen happy = "eileen_happy.png"
+# ==============================================
+# background
 image black = "#000000"
 image white = "#ffffff"
-image background a = "Arcance a.jpg"
-image background b = "Arcance b.jpg"
-image background c = "Arcance c.jpg"
-image background d = "Arcance d.jpg"
-image background e = "Arcance e.jpg"
-image background f = "Arcance f.jpg"
+image background a = "backgrounds/Arcance a.jpg"
+image background b = "backgrounds/Arcance b.jpg"
+image background c = "backgrounds/Arcance c.jpg"
+image background d = "backgrounds/Arcance d.jpg"
+image background e = "backgrounds/Arcance e.jpg"
+image background f = "backgrounds/Arcance f.jpg"
 image background g = "#ffffff"
 image background h = "#ffffff"
 image background i = "#ffffff"
 image background j = "#ffffff"
 image background k = "#ffffff"
-image background darkLordLair = "Arcance dark lord lair.jpg"
-image background dragonCave = "Arcance dragon cave.jpg"
-image background princeCastle = "Arcance prince castle.jpg"
-
-image side prince = "Arcance - prince avatar.png"
-image side adelaide = "Ade.png"
-image side witch = "Witch.png"
+image background darkLordLair = "backgrounds/Arcance dark lord lair.jpg"
+image background dragonCave = "backgrounds/Arcance dragon cave.jpg"
+image background princeCastle = "backgrounds/Arcance prince castle.jpg"
 
 
 
-# Declare characters used by this game.
-define king = Character('King', color="#6e6ef7")
+# avatars
+image side adelaide = im.FactorScale("avatars/Adelaide avatar.png", 0.5,0.5)#, xalign=0.5, yalign=0.5)
+image side adelaide angry = im.FactorScale("avatars/Adelaide colere avatar.png", 0.5,0.5)
+image side adelaide scared = im.FactorScale("avatars/Adelaide effrayee avatar.png", 0.5,0.5)
+image side adelaide blushed = im.FactorScale("avatars/Adelaide rougit avatar.png", 0.5,0.5)
+image side adelaide surprised = im.FactorScale("avatars/Adelaide surprise avatar.png", 0.5,0.5)
+
+image side mage = im.FactorScale("avatars/Mage avatar.png", 0.5,0.5)
+image side witch = im.FactorScale("avatars/old lady.png", 0.5,0.5)
+image side darkLord = im.FactorScale("avatars/dark lord avatar.png", 0.5,0.5)
+
+image side dragon = im.FactorScale("avatars/dragon avatar.png", 0.5,0.5)
+image side knight blue = im.FactorScale("avatars/knight bleu.png", 0.5,0.5)
+image side knight purple = im.FactorScale("avatars/knight violet.png", 0.5,0.5)
+image side knight green = im.FactorScale("avatars/knight vert.png", 0.5,0.5)
+
+image side king = im.FactorScale("Arcance king avatar.png", 0.5,0.5)
+image side king laugh = im.FactorScale("Arcance king rit avatar.png", 0.5,0.5)
+image side prince = im.FactorScale("Prince avatar.png", 0.5,0.5)
+
+
+# ==============================================
+# Character
+define king = Character('King', color="#6e6ef7", show_side_image=Image("avatars/Arcance king avatar.png", xalign=0.5, yalign=0.5))
 define queen = Character('Queen', color="#cc00b4")
-define mage = Character('Head mage', color="#c8ffc8")
-define ade = Character('Adelaide', color="#f96c9b", image="adelaide")
+define mage = Character('Head mage', color="#c8ffc8", show_side_image=Image("avatars/Mage avatar.png", xalign=0.5, yalign=0.5))
+define ade = Character('Adelaide', color="#f96c9b", show_side_image=Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.5))#, xalign=0.5, yalign=0.5))#"adelaide") #window_left_padding=165,
 define unknown = Character('...', color="#d0d5d7")
-define witch = Character('Old lady', color="#966c69", image="witch")
+define witch = Character('Old lady', color="#966c69", show_side_image=Image("avatars/old lady.png", xalign=0.5, yalign=0.5))
 define guard = Character('Guard', color="#849294")
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 
+# ==============================================
 # The game starts here.
 label start:
 
