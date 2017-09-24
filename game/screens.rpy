@@ -558,4 +558,3 @@ init -2:
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
-

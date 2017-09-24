@@ -5,7 +5,7 @@
 # background
 image black = "#000000"
 image white = "#ffffff"
-image background a = "backgrounds/Arcance a.jpg"
+image background a = "backgrounds/Arcance a.png"
 image background b = "backgrounds/Arcance b.jpg"
 image background c = "backgrounds/Arcance c.jpg"
 image background d = "backgrounds/Arcance d.jpg"
@@ -23,7 +23,7 @@ image background princeCastle = "backgrounds/Arcance prince castle.jpg"
 
 
 # avatars
-image side adelaide = im.FactorScale("avatars/Adelaide avatar.png", 0.5,0.5)#, xalign=0.5, yalign=0.5)
+image side adelaide = "avatars/Adelaide avatar.png"
 image side adelaide angry = im.FactorScale("avatars/Adelaide colere avatar.png", 0.5,0.5)
 image side adelaide scared = im.FactorScale("avatars/Adelaide effrayee avatar.png", 0.5,0.5)
 image side adelaide blushed = im.FactorScale("avatars/Adelaide rougit avatar.png", 0.5,0.5)
@@ -45,12 +45,12 @@ image side prince = im.FactorScale("Prince avatar.png", 0.5,0.5)
 
 # ==============================================
 # Character
-define king = Character('King', color="#6e6ef7", show_side_image=Image("avatars/Arcance king avatar.png", xalign=0.5, yalign=0.5))
+define king = Character('King', color="#6e6ef7", show_side_image=Image("avatars/Arcance king avatar.png", xalign=0.5, yalign=0.649))
 define queen = Character('Queen', color="#cc00b4")
-define mage = Character('Head mage', color="#c8ffc8", show_side_image=Image("avatars/Mage avatar.png", xalign=0.5, yalign=0.5))
-define ade = Character('Adelaide', color="#f96c9b", show_side_image=Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.5))#, xalign=0.5, yalign=0.5))#"adelaide") #window_left_padding=165,
+define mage = Character('Head mage', color="#c8ffc8", show_side_image=Image("avatars/Mage avatar.png", xalign=0.5, yalign=0.649))
+define ade = Character('Adelaide', color="#f96c9b", show_side_image=Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.649))#, xalign=0.5, yalign=0.5))#"adelaide") #window_left_padding=165,
 define unknown = Character('...', color="#d0d5d7")
-define witch = Character('Old lady', color="#966c69", show_side_image=Image("avatars/old lady.png", xalign=0.5, yalign=0.5))
+define witch = Character('Old lady', color="#966c69", show_side_image=Image("avatars/old lady.png", xalign=0.5, yalign=0.649))
 define guard = Character('Guard', color="#849294")
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
