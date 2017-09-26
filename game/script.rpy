@@ -23,7 +23,8 @@ image background princeCastle = "backgrounds/Arcance prince castle.jpg"
 
 
 # avatars
-image side adelaide = "avatars/Adelaide avatar.png"
+image adelaide = Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.649)
+image side adelaide = im.FactorScale("avatars/Adelaide avatar.png", 0.5,0.5)
 image side adelaide angry = im.FactorScale("avatars/Adelaide colere avatar.png", 0.5,0.5)
 image side adelaide scared = im.FactorScale("avatars/Adelaide effrayee avatar.png", 0.5,0.5)
 image side adelaide blushed = im.FactorScale("avatars/Adelaide rougit avatar.png", 0.5,0.5)
@@ -133,7 +134,7 @@ label king_choice:
     "Years passed and with them went the peace and prosperity of the kingdom. \
     Nevertheless, the child grew and learnt."
 
-    scene background g
+    show adelaide
     "Adelaide was a beautiful child, with hairs as bright as flame and eyes as green as emeralds. \
     Even so young she was already coveted by all the princes in the neighbours, a fact her father the King was very proud of."
 
