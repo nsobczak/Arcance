@@ -23,7 +23,9 @@ image background princeCastle = "backgrounds/Arcance prince castle.jpg"
 
 
 # avatars
-image adelaide = Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.649)
+define avatarXAlign = 0.5
+define avatarYAlign = 0.649
+image adelaide = Image("avatars/Adelaide avatar.png", xalign=avatarXAlign, yalign=avatarYAlign)
 image side adelaide = im.FactorScale("avatars/Adelaide avatar.png", 0.5,0.5)
 image side adelaide angry = im.FactorScale("avatars/Adelaide colere avatar.png", 0.5,0.5)
 image side adelaide scared = im.FactorScale("avatars/Adelaide effrayee avatar.png", 0.5,0.5)
@@ -46,12 +48,12 @@ image side prince = im.FactorScale("Prince avatar.png", 0.5,0.5)
 
 # ==============================================
 # Character
-define king = Character('King', color="#6e6ef7", show_side_image=Image("avatars/Arcance king avatar.png", xalign=0.5, yalign=0.649))
+define king = Character('King', color="#6e6ef7", show_side_image=Image("avatars/Arcance king avatar.png", xalign=avatarXAlign, yalign=avatarYAlign))
 define queen = Character('Queen', color="#cc00b4")
-define mage = Character('Head mage', color="#c8ffc8", show_side_image=Image("avatars/Mage avatar.png", xalign=0.5, yalign=0.649))
-define ade = Character('Adelaide', color="#f96c9b", show_side_image=Image("avatars/Adelaide avatar.png", xalign=0.5, yalign=0.649))#, xalign=0.5, yalign=0.5))#"adelaide") #window_left_padding=165,
+define mage = Character('Head mage', color="#c8ffc8", show_side_image=Image("avatars/Mage avatar.png", xalign=avatarXAlign, yalign=avatarYAlign))
+define ade = Character('Adelaide', color="#f96c9b", show_side_image=Image("avatars/Adelaide avatar.png", xalign=avatarXAlign, yalign=avatarYAlign))#, xalign=0.5, yalign=0.5))#"adelaide") #window_left_padding=165,
 define unknown = Character('...', color="#d0d5d7")
-define witch = Character('Old lady', color="#966c69", show_side_image=Image("avatars/old lady.png", xalign=0.5, yalign=0.649))
+define witch = Character('Old lady', color="#966c69", show_side_image=Image("avatars/old lady.png", xalign=avatarXAlign, yalign=avatarYAlign))
 define guard = Character('Guard', color="#849294")
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
@@ -89,11 +91,11 @@ label label_king_choice_menu:
         "sacrifice three swans and pour their blood on the ground to appeal to his ancestors during the summer solstice.":
             $ king_choice = 2
 
-        "grind seven rubies  in the goddess of the Arcance’s lands’ temple as an offering.":
-            $ king_choice = 3
-
-        "make his Queen drink elixirs of diluted occamy venom during each of the black moon of the pregnancy.":
-            $ king_choice = 4
+        # "grind seven rubies  in the goddess of the Arcance’s lands’ temple as an offering.":
+        #     $ king_choice = 3
+        #
+        # "make his Queen drink elixirs of diluted occamy venom during each of the black moon of the pregnancy.":
+        #     $ king_choice = 4
 
 
 # ======
@@ -145,7 +147,7 @@ label king_choice:
     with Dissolve(1.5)
     $ renpy.pause(1.0)
     hide text with dissolve
-    jump label_daughter_witch
+    jump daughterWitch
 
 
 # ======

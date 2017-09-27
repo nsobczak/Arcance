@@ -1,7 +1,7 @@
 ﻿# You can place the script of your game in this file.
 
 # jump to 4 or 5
-label label_daughter_witch:
+label daughterWitch:
     scene background b
 
     ade "I hate this kingdom! \
@@ -56,16 +56,18 @@ label daughterWitch_option5:
 
 # jump to end
 label daughterWitch_option6:
+    $ daughterWitch_option = 6
     ade "Ah! What is this light? What have you done?"
     witch "This aught to teach you to respect your elder."
     guard "Your highness, is there a problem?"
     ade "This witch cursed me!"
     ade "..."
     ade "Where did she go?!"
-    jump end
+    jump daughterWitch_end
 
 # jump to daughterWitch_witchEscape
 label daughterWitch_option7:
+    $ daughterWitch_option = 7
     witch "I understand. Here is a piece of advice that may help you in those dark times."
 
     if (ade_witch_choice == 1):
@@ -88,6 +90,7 @@ label daughterWitch_option7:
 
 # jump to daughterWitch_witchEscape
 label daughterWitch_option8:
+    $ daughterWitch_option = 8
     witch "In that case, please do not let me detain you. \
     I had better hurry and get in a more public part of the castle."
     witch "Not so quick. You appear to be a good girl and I wish to help you.\
@@ -104,7 +107,8 @@ label daughterWitch_witchEscape:
     $ renpy.pause(0.5)
     hide text with dissolve
 
-    jump end
+    jump daughterWitch_end
 
 
-jump end
+label daughterWitch_end:
+    jump daughterParent
