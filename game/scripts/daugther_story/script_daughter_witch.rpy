@@ -111,7 +111,7 @@ label daughterWitch_witchEscape:
 
     show black with Dissolve(1.5)
     $ renpy.pause(0.5)
-    hide text with dissolve
+    hide text
 
     jump daughterWitch_end
 
