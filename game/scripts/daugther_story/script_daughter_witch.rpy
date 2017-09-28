@@ -72,21 +72,23 @@ label daughterWitch_option6:
 
 # jump to daughterWitch_witchEscape
 label daughterWitch_option7:
-    $ daughterWitch_option = 7
     witch "I understand. Here is a piece of advice that may help you in those dark times."
 
     if (ade_witch_choice == 1):
+        $ daughterWitch_option = 71
         witch "Even if men cannot appreciate a woman’s talent, they are not the only creature to inhabit this Earth!"
         witch "Nor are they the mightiest despite what they may choose to think…"
         ade "Yet I have heard that magic can make of human something more, able to challenge anything!"
 
     elif (ade_witch_choice == 2):
+        $ daughterWitch_option = 72
         witch "You may despise being underestimated for your sex, \
         but I have often find that normal men easily underestimate their wife \
         and present them their back without second thoughts…"
         witch "As long as there is a child to be regent for… Something to think about, eh?"
 
     else:
+        $ daughterWitch_option = 73
         witch "Magic is the answer to your problem. My Lord went from an orphanage to a castle\
          and he will soon reign over the whole continent thanks to his powerful magic. \
         Starting so high yourself, you aught to be able to make something of yourself."

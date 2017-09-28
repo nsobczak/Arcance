@@ -58,6 +58,35 @@ label daughterParents_option10:
     $ ade_parents_choice = 10
     king "Do not worry your pretty little head over this. \
     Duke Laurence will certainly be able to protect the kingdom in my absence"
+
+    if (daughterWitch_option == 73):
+        show adelaide angry at left
+        ade "I have heard that a powerful mage wish to conquer the continent! \
+        He will certainly use this time to act!"
+        king "Alright. If you are so sure we will not go. \
+        It is true that we cannot risk getting mages involved in top of everything else!"
+        show adelaide at left
+        ade "Thank you for trusting me, Father!"
+    elif (daughterWitch_option == 6 or daughterWitch_option == 71 or daughterWitch_option == 72):
+        ade "Are you sure he will be able to handle the situation by himself? \
+        May I give him some advices on how to handle the situation?"
+        if (daughterWitch_option == 6):
+            show king laugh at right
+            king "Balderdash! You had better leave politics to men, \
+            gullible as you are! Ah, ah, ah!"
+            show adelaide angry at left
+            ade "Rah! I hate men!"
+        else:
+            king "Alright, if it make you feel useful… \
+            Although do not be surprised if he does not listen to you! \
+            He is the one with the experience after all!"
+    elif (daughterWitch_option == 8):
+        ade "At the very least take this stone. \
+        A witch told me that it was magical. \
+        It may be able to protect you."
+        king "Well, if this can reassure you…"
+        show king laugh at right
+        king "Women!"
     jump end
 
 label daughterParents_option11:
