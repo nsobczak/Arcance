@@ -55,7 +55,7 @@ label daughterWitch_option5:
     menu:
         "I apologise, but we are at war. I am afraid that we cannot afford to lower our caution…":
             jump daughterWitch_option7
-        "I apologise, but we are at war. I am afraid that we cannot afford to lower our caution…":
+        "In that case, please do not let me detain you.":
             jump daughterWitch_option8
 
 # jump to end
@@ -96,8 +96,6 @@ label daughterWitch_option7:
 # jump to daughterWitch_witchEscape
 label daughterWitch_option8:
     $ daughterWitch_option = 8
-    witch "In that case, please do not let me detain you. \
-    I had better hurry and get in a more public part of the castle."
     witch "Not so quick. You appear to be a good girl and I wish to help you.\
     Here take this stone. It aughts to make thing… interesting."
     jump daughterWitch_witchEscape
