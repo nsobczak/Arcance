@@ -60,6 +60,9 @@ define ade = Character('Adelaide', color="#f96c9b", window_left_padding=100, sho
 define unknown = Character('...', color="#d0d5d7", window_left_padding=100)
 define witch = Character('Old lady', color="#966c69", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/old lady.png", 0.5, 0.5)))
 define guard = Character('Guard', color="#849294", window_left_padding=100)
+define knightB = Character('Blue knight', color="#5e76a1", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight bleu.png", 0.5, 0.5)))
+define knightP = Character('Purple knight', color="#7f5ea1", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight violet.png", 0.5, 0.5)))
+define knightG = Character('Green knight', color="#5b9570", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight vert.png", 0.5, 0.5)))
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 
@@ -67,6 +70,9 @@ define guard = Character('Guard', color="#849294", window_left_padding=100)
 # The game starts here.
 label start:
     show background title with Dissolve(1.0)
+    #show dragon at right with dissolve
+    #show darkLord at left with dissolve
+    $ renpy.pause()
     show background a with Dissolve(1.0)
     "Once upon a time, in the magnificent kingdom of Arcance, lived a King and a Queen. \
     Both had just acceded to the throne after the death of the old King and they were greatly loved by their people."
