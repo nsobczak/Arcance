@@ -53,16 +53,17 @@ image prince = Image("avatars/Prince avatar.png", xalign=avatarXAlign, yalign=av
 
 # ==============================================
 # Character
-define king = Character('King', color="#6e6ef7", window_left_padding=250, show_side_image=im.Composite((config.screen_width, config.screen_height), (0, config.screen_height-150), im.FactorScale("avatars/Arcance king avatar.png", 0.5, 0.5)))
+define king = Character('King', color="#665AB0", window_left_padding=250, show_side_image=im.Composite((config.screen_width, config.screen_height), (0, config.screen_height-150), im.FactorScale("avatars/Arcance king avatar.png", 0.5, 0.5)))
 define queen = Character('Queen', color="#cc00b4", window_left_padding=100)
 define mage = Character('Head mage', color="#c8ffc8", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Mage avatar.png", 0.5, 0.5)))
-define ade = Character('Adelaide', color="#f96c9b", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Adelaide avatar.png", 0.5, 0.5)))
+define ade = Character('Adelaide', color="#EF7955", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Adelaide avatar.png", 0.5, 0.5)))
 define unknown = Character('...', color="#d0d5d7", window_left_padding=100)
-define witch = Character('Old lady', color="#966c69", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/old lady.png", 0.5, 0.5)))
+define witch = Character('Old lady', color="#A8A4A3", window_left_padding=100, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/old lady.png", 0.5, 0.5)))
 define guard = Character('Guard', color="#849294", window_left_padding=100)
 define knightB = Character('Blue knight', color="#5e76a1", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight bleu.png", 0.5, 0.5)))
 define knightP = Character('Purple knight', color="#7f5ea1", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight violet.png", 0.5, 0.5)))
 define knightG = Character('Green knight', color="#5b9570", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight vert.png", 0.5, 0.5)))
+define dragon = Character('Dragon', color="#AEFFF0", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dragon avatar.png", 0.5, 0.5)))
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 

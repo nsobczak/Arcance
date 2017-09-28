@@ -25,7 +25,7 @@ label daughterWitch:
 
     unknown "Mmm, what an ambitious wish…"
     show adelaide at left
-    show witch at right
+    show witch at right with moveinright
     with dissolve
     ade "Who is there?!"
     witch "Reassure yourself, child. It is only, I, an old Lady."
@@ -65,7 +65,7 @@ label daughterWitch_option6:
     witch "This aught to teach you to respect your elder."
     guard "Your highness, is there a problem?"
     ade "This witch cursed me!"
-    hide witch
+    hide witch with moveoutright
     ade "..."
     ade "Where did she go?!"
     jump daughterWitch_end
@@ -105,7 +105,7 @@ label daughterWitch_option8:
 # jump to end
 label daughterWitch_witchEscape:
     witch "He, he, he"
-    hide witch
+    hide witch with moveoutright
     ade "Ah! What is this smoke?"
     ade "Uh? Where did she go?"
 

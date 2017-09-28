@@ -102,9 +102,8 @@ label daughterParents_option11:
     jump daughterParents_follow_1
 
 label daughterParents_follow_1:
-    hide adelaide
-    hide king
-    hide text with dissolve
+    hide adelaide with moveoutleft
+    hide king with moveoutright
     show black with dissolve
 
     if (ade_parents_choice == 10 and daughterWitch_option == 73):
@@ -152,9 +151,8 @@ label daughterParents_follow_2:
         show adelaide surprised at left
         ade "What???!"
 
-    hide adelaide
-    hide knightB
-    hide text with dissolve
+    hide adelaide with moveoutleft
+    hide knightB with moveoutright
     show black with dissolve
 
     jump end
