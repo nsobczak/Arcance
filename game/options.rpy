@@ -22,7 +22,14 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Arcance"
-    config.version = "0.0"
+    config.version = "1.0"
+    gui.show_name = True
+    gui.about = _("""\
+    Game developped by Nicolas Sobczak.
+
+    Backgrounds and avatars by Amelie Sobczak.
+    Story by Amelie Sobczak.
+    """)
 
     #########################################
     # Themes
