@@ -22,6 +22,7 @@ label daughterParentsStay:
     hide king with moveoutright
     show black with dissolve
 
+label daughterParentsStay_adeDragonSacrifice:
     scene background dragonCave with slideleft
     show adelaide scared
     ade "I hate my life! I save Mother and Father from assassination and this is how they thank me!"

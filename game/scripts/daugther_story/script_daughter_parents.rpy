@@ -51,7 +51,6 @@ label daughterParents_option9:
                 king "Well, if this can reassure you…"
                 show king laugh at right
                 king "Women!"
-
     jump daughterParents_follow_1
 
 # jump to daughterParents_follow_1 or # jump to daughterParents_follow_2
@@ -134,6 +133,7 @@ label daughterParents_follow_2:
             ade "What???!"
             show adelaide at left
             knightB "I am afraid that you have no choice but to go and negotiate their release yourself."
+        jump daughterParentsMeetDragon
 
     elif ((ade_parents_choice == 10) and (daughterWitch_option == 6 or daughterWitch_option == 71 or daughterWitch_option == 72)):
         knightB "Their Majesties have been assassinated by the King of Neterny."
