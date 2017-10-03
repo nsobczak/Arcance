@@ -164,5 +164,5 @@ label king_choice:
 
 # ======
 label end:
-    mage "At the end of the story, this is the end of the game."
+    "Game Over"#This is the end of the game."
     return
