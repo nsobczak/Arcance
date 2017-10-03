@@ -1,7 +1,4 @@
-﻿# You can place the script of your game in this file.
-
-
-### 16, 6->  = end of game ? ###
+﻿### 16, 6->  = end of game ? ###
 label daughterParentsFleeToDragon:
     scene dragonCave
     show adelaide
@@ -24,8 +21,9 @@ label daughterParentsFleeToDragon:
     ade "A dragon! But none has been sighted in those mountain for at least a century!"
     dragon "Ssssss. A Little a human. \
     Not enough to satiate my hunger after sleeping so long but it will have to do…"
-    ade "What should I do? I am going to die!"
 
+label daughterParentsFleeToDragon_firstChoice:
+    ade "What should I do? I am going to die!"
     menu:
         "Thoughts: Really there is no choice there, \
         I can only attempt to flee and hope for the best…":

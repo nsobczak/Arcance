@@ -1,5 +1,3 @@
-﻿# You can place the script of your game in this file.
-
 label daughterParentsStay:
     scene background b
     show king at right with dissolve
@@ -36,4 +34,4 @@ label daughterParentsStay:
     dragon "Well, what do we have here... A Little a human. Not enough to satiate my hunger after sleeping so long but it will have to do…"
     ade "I am going to die!"
 
-    jump end
+    jump daughterParentsFleeToDragon_firstChoice
