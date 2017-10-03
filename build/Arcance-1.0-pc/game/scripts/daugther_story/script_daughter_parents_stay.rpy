@@ -1,5 +1,3 @@
-﻿# You can place the script of your game in this file.
-
 label daughterParentsStay:
     scene background b
     show king at right with dissolve
@@ -24,6 +22,7 @@ label daughterParentsStay:
     hide king with moveoutright
     show black with dissolve
 
+label daughterParentsStay_adeDragonSacrifice:
     scene background dragonCave with slideleft
     show adelaide scared
     ade "I hate my life! I save Mother and Father from assassination and this is how they thank me!"
@@ -36,4 +35,4 @@ label daughterParentsStay:
     dragon "Well, what do we have here... A Little a human. Not enough to satiate my hunger after sleeping so long but it will have to do…"
     ade "I am going to die!"
 
-    jump end
+    jump daughterParentsFleeToDragon_firstChoice

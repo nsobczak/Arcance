@@ -65,6 +65,8 @@ define knightP = Character('Purple knight', color="#7f5ea1", window_left_padding
 define knightG = Character('Green knight', color="#5b9570", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight vert.png", 0.5, 0.5)))
 define dragon = Character('Dragon', color="#AEFFF0", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dragon avatar.png", 0.5, 0.5)))
 define prince = Character('Prince', color="#398D01", window_left_padding=150, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Prince avatar.png", 0.5, 0.5)))
+define mLord = Character('Mysterious Lord', color="#404040", window_left_padding=110, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
+define dLord = Character('Dark Lord', color="#4C1407", window_left_padding=110, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 
