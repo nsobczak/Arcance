@@ -1,0 +1,5 @@
+label daughterWarAgainstNeternity:
+
+
+
+    jump end
