@@ -25,7 +25,7 @@ label daughterParentsMeetDragon:
 
 
 label daughterParentsMeetDragon_option22:
-    scene dragonCave
+    scene background ragonCave
     show adelaide scared at left
     ade "Dragon! Hey! Dragon!"
     dragon "Roarrr!"
@@ -63,7 +63,7 @@ label daughterParentsMeetDragon_option23:
     hide adelaide with dissolve
     hide knight purple with dissolve
     show black with dissolve
-    scene darkLordLair
+    scene background darkLordLair
     show darkLord at right with dissolve
     show adelaide scared at left with dissolve
 
