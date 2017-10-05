@@ -1,5 +1,3 @@
-﻿# You can place the script of your game in this file.
-
 label daughterParentsMarriage:
     scene background b with dissolve
     show adelaide scared at left

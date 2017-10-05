@@ -135,21 +135,24 @@ label daughterParents_follow_2:
             knightB "I am afraid that you have no choice but to go and negotiate their release yourself."
         jump daughterParentsMeetDragon
 
-    elif ((ade_parents_choice == 10) and (daughterWitch_option == 6 or daughterWitch_option == 71 or daughterWitch_option == 72)):
+    elif ((ade_parents_choice == 10) and (daughterWitch_option == 71 or daughterWitch_option == 72)): #daughterWitch_option == 6 or
         knightB "Their Majesties have been assassinated by the King of Neterny."
         show adelaide surprised at left
         ade "What???!"
+        jump daughterParentsDeadAdvice
 
     elif (ade_parents_choice == 10 and daughterWitch_option == 8):
         knightB "Their Majesties have been able to conclude an alliance with Neterny…"
         ade "That sounds like very good news."
         knightB "Unfortunately, the King condition was your hand in marriage…"
         ade "thoughts: … I should have seen that coming."
+        jump daughterParentsMarriage
 
-    else: #ade_parents_choice == 11
+    else: #ade_parents_choice == 11 or daughterWitch_option == 6
         knightB "Their Majesties have been assassinated by the King of Neterny."
         show adelaide surprised at left
         ade "What???!"
+        jump daughterWarAgainstNeternity
 
     hide adelaide with moveoutleft
     hide knightB with moveoutright

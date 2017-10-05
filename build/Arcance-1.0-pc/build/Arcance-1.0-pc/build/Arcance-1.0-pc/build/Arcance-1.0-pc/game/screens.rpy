@@ -195,6 +195,7 @@ screen main_menu():
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Help") action Help()
+        textbutton _("Credits") action ShowMenu("credits")
         textbutton _("Quit") action Quit(confirm=False)
 
 init -2:
@@ -231,6 +232,7 @@ screen navigation():
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Main Menu") action MainMenu()
         textbutton _("Help") action Help()
+        textbutton _("Credits") action ShowMenu("credits")
         textbutton _("Quit") action Quit()
 
 init -2:
@@ -332,6 +334,42 @@ init -2:
     style file_picker_nav_button_text is small_button_text
     style file_picker_button is large_button
     style file_picker_text is large_button_text
+
+
+##############################################################################
+# Credits
+#
+screen credits():
+
+    # This ensures that any other menu screen is replaced.
+    tag menu
+
+    # Include the navigation.
+    use navigation
+
+    frame:
+        style_group "credits"
+
+        vbox: #This puts the elements in a vertical box, you could use an hbox or a grid or a fixed, etc.
+            text "Writer: Amelie Sobczak"
+            text "Programming: Nicolas Sobczak"
+            #text "Music and Sound: "
+            text "Background and Avatar Art: Amelie Sobczak"
+            text "GUI: Nicolas Sobczak"
+            #textbutton _("Return") action Return()
+
+init -2:
+    style credits_frame:
+        xfill True
+        xmargin .05
+        ypos .1
+        yanchor 0
+        ypadding .05
+
+    style credits_vbox:
+        xalign .5
+        yalign .5
+        spacing 30
 
 
 ##############################################################################
@@ -552,8 +590,8 @@ init -2:
 
     style quick_button_text:
         is default
-        size 12
-        idle_color "#8888"
+        size 16
+        idle_color "#5c6bbc"
         hover_color "#ccc"
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"

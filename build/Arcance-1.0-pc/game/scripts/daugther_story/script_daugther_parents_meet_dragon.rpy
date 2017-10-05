@@ -25,7 +25,7 @@ label daughterParentsMeetDragon:
 
 
 label daughterParentsMeetDragon_option22:
-    scene dragonCave
+    scene background ragonCave
     show adelaide scared at left
     ade "Dragon! Hey! Dragon!"
     dragon "Roarrr!"
@@ -63,7 +63,7 @@ label daughterParentsMeetDragon_option23:
     hide adelaide with dissolve
     hide knight purple with dissolve
     show black with dissolve
-    scene darkLordLair
+    scene background darkLordLair
     show darkLord at right with dissolve
     show adelaide scared at left with dissolve
 
@@ -80,8 +80,6 @@ label daughterParentsMeetDragon_option23:
     show adelaide scared at left
     ade "What is that?! Black magic!"
     mLord "Stupid little girl… You have come to the castle of a Dark Lord all innocent and ignorant."
-
-    #TODO: consequences to darkLord
 
     if(daughterWitch_option == 73):
         show adelaide at left

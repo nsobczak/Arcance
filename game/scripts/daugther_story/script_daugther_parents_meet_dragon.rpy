@@ -81,8 +81,6 @@ label daughterParentsMeetDragon_option23:
     ade "What is that?! Black magic!"
     mLord "Stupid little girl… You have come to the castle of a Dark Lord all innocent and ignorant."
 
-    #TODO: consequences to darkLord
-
     if(daughterWitch_option == 73):
         show adelaide at left
         ade "No, I have heard about you! In fact, I am quite delighted to have meet you!"

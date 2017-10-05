@@ -1,6 +1,6 @@
 ﻿### 16, 6->  = end of game ? ###
 label daughterParentsFleeToDragon:
-    scene dragonCave
+    scene background dragonCave
     show adelaide
 
     ade "Uh, I am so tired! Why will this horse not go any faster! \
