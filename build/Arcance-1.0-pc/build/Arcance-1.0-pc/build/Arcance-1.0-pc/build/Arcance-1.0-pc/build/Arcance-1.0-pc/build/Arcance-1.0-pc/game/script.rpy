@@ -8,19 +8,19 @@ image black = "#000000"
 image white = "#ffffff"
 image background a = "backgrounds/Arcance a.png"
 image background b = "backgrounds/Arcance b.jpg"
-image background c = "backgrounds/Arcance c.jpg"
+image background c = "backgrounds/Arcance c.png"
 image background d = "backgrounds/Arcance d.jpg"
 image background e = "backgrounds/Arcance e.jpg"
-image background f = "backgrounds/Arcance f.jpg"
+image background f = "backgrounds/Arcance f.png"
 image background g = "#ffffff"
 image background h = "#ffffff"
 image background i = "#ffffff"
 image background j = "#ffffff"
 image background k = "#ffffff"
-image background darkLordLair = "backgrounds/Arcance dark lord lair.jpg"
-image background dragonCave = "backgrounds/Arcance dragon cave.jpg"
+image background darkLordLair = "backgrounds/Arcance dark lord lair.png"
+image background dragonCave = "backgrounds/Arcance dragon cave.png"
 image background princeCastle = "backgrounds/Arcance prince castle.jpg"
-
+image background title = "backgrounds/Arcance page de titre.png"
 
 
 # avatars
@@ -66,10 +66,8 @@ define guard = Character('Guard', color="#849294", window_left_padding=100)
 # ==============================================
 # The game starts here.
 label start:
-
-    show background a
-
-    with Dissolve(1.0)
+    show background title with Dissolve(1.0)
+    show background a with Dissolve(1.0)
     "Once upon a time, in the magnificent kingdom of Arcance, lived a King and a Queen. \
     Both had just acceded to the throne after the death of the old King and they were greatly loved by their people."
 
@@ -116,7 +114,7 @@ label king_choice:
     scene background f
     "After several hours, the Head mage burst out of the chamber, a small bundle in his arm."
 
-    show mage
+    show mage at left
     if (king_choice == 1):
         mage "Congratulation your Majesty, it’s a girl!"
 

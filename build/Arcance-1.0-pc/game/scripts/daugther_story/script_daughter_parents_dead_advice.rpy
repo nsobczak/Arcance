@@ -34,7 +34,7 @@ label daughterParentsDeadAdvice:
     if (daughterParentsDeadAdvice_choice == 24):
         if (daughterWitch_option == 71):
             scene background princeCastle
-            "It was with a heavy heart that Adélaïde resigned herself to what awaited her."
+            "It was with a heavy heart that Adelaide resigned herself to what awaited her."
             "Her dread proved to be founded as King Frederic proved to be even more controlling \
             and insulting than her parents, humiliating her in public and brutal in private."
             "Adelaide was happy when she found herself pregnant, imagining that he would become softer with her."

@@ -81,6 +81,57 @@ label daughterParentsMeetDragon_option23:
     ade "What is that?! Black magic!"
     mLord "Stupid little girl… You have come to the castle of a Dark Lord all innocent and ignorant."
 
-    #TODO: menu decision to darkLord
+    #TODO: consequences to darkLord
+
+    if(daughterWitch_option == 73):
+        show adelaide at left
+        ade "No, I have heard about you! In fact, I am quite delighted to have meet you!"
+        ade "I beg you to take me as your apprentice! \
+        I wish to learn magic to have the power to make choice of my own!"
+        dLord "… you realise that you will have to submit to me and ober my every orders?"
+        ade "You appear to be intelligent! I have no doubt that you would be willing to listen to what \
+        I have to say and not dismiss my opinion just because I am a woman!"
+        dLord "… very well."
+        "Despite her initial suspicion, Adelaide was delighted to have the opportunity \
+        to learn magic from the Dark Lord himself in the following years."
+        "With such an exigent mentor, she was quick to make progress and gain a top spot in his army. \
+        As expected, once she had proven herself, he treated her with at least as much respect as his men."
+        scene background a
+        "Together they made a short work of conquering Arcance, N eterny and Arcla. \
+        From now on, the rest of the continent awaited them. \
+        And Adelaide was quite seeing herself as the Consort of the future Emperor."
+
+    elif(daughterWitch_option == 71 or daughterWitch_option == 72):
+        dLord "Are you afraid of my power?"
+        ade "No, no! In fact I quite like dark magic!"
+        dLord "… very well."
+        ade "Thoughts: I do not like that smile… What is he going to do…"
+        "When the Dark Lord ended up using his dark magic to enslave her, \
+        Adelaide was not surprised. She had no choice but to resign herself \
+        to a life of humiliation and privation."
+
+    elif(daughterWitch_option == 8):
+        dLord "!"
+        dLord "What is this?"
+        ade "…an old witch gave me this stone."
+        dLord "Helen… Always putting her nose where it does not belong…"
+        dLord "Very well. You shall stay here."
+        "Despite Adelaide's initial suspicion, \
+        the Dark Lord proved true to his word and she was offered asylum as she had asked. \
+        The Dark Lord himself kept her at arm length."
+        "With time, she was able to glean a bit of magic from here and there \
+        but she was no match for the Lord and his Court \
+        and had to resign herself to look from the outside."
+
+    else:#daughterWitch_option == 6
+        dLord "!"
+        dLord "What is this? You have been cursed!"
+        ade "…an old witch gave this to me."
+        dLord "Helen... I recognise her style…"
+        dLord "Far be it from me to go against her decisions…"
+        "After a flash of light, Adelaide felt as if her innards were ablaze. \
+        She felt to the ground, her whole body twisting uncontrollably from the pain."
+        "This seemed to last forever before she felt herself slip away, \
+        the Dark Lord’s cruel laugh in her ears."
 
     jump end

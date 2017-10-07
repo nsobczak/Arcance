@@ -58,7 +58,7 @@ label daughterParentsMeetDragon_option23:
     knightP "Stop! Who goes there!"
     show adelaide surprised at left with moveinleft
     ade "!"
-    ade "Umm… I am Adélaïde of Arcance! I have come to ask for asylum to your Lord! Lead me in front of him!"
+    ade "Umm… I am Adelaide of Arcance! I have come to ask for asylum to your Lord! Lead me in front of him!"
 
     hide adelaide with dissolve
     hide knight purple with dissolve

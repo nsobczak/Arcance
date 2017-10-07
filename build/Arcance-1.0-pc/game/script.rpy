@@ -64,9 +64,9 @@ define knightB = Character('Blue knight', color="#5e76a1", window_left_padding=2
 define knightP = Character('Purple knight', color="#7f5ea1", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight violet.png", 0.5, 0.5)))
 define knightG = Character('Green knight', color="#5b9570", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/knight vert.png", 0.5, 0.5)))
 define dragon = Character('Dragon', color="#AEFFF0", window_left_padding=230, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dragon avatar.png", 0.5, 0.5)))
-define prince = Character('Prince', color="#398D01", window_left_padding=150, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Prince avatar.png", 0.5, 0.5)))
-define mLord = Character('Mysterious Lord', color="#404040", window_left_padding=110, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
-define dLord = Character('Dark Lord', color="#4C1407", window_left_padding=110, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
+define prince = Character('Prince', color="#398D01", window_left_padding=180, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/Prince avatar.png", 0.5, 0.5)))
+define mLord = Character('Mysterious Lord', color="#949494", window_left_padding=200, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
+define dLord = Character('Dark Lord', color="#9a280e", window_left_padding=200, show_side_image=im.Composite((config.screen_width, config.screen_height), (5, config.screen_height-150), im.FactorScale("avatars/dark lord avatar.png", 0.5, 0.5)))
 # $ art = Character("King Arthur", what_font="MyFont.ttf")
 
 
@@ -130,10 +130,12 @@ label king_choice:
 
     else:
         mage "I am afraid that I have terrible news, your Majesty. The child was stillborn…"
+        hide mage
 
         "The King was devastated by the news. Nevertheless, he resolved to try another time and, soon, the Queen was pregnant again.\
         This time, the King decided to"
 
+        scene background d
         jump label_king_choice_menu
 
     hide mage

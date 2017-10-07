@@ -34,7 +34,7 @@ label daughterParentsFleeToDragon_firstChoice:
 
     if (daughterDragonDecision == 16):
         if(daughterWitch_option == 6):
-            "As Adélaïde tried to flee, she felt a huge heat behind her and a brief pain. \
+            "As Adelaide tried to flee, she felt a huge heat behind her and a brief pain. \
             She did not have time to realise that she was about to die."
             jump end
         else:#daughterWitch_option == 71,72,73,8
@@ -82,13 +82,13 @@ label daughterParentsFleeToDragon_decision:
 
 
     if (daughterDragonDecision == 18):
-        "As Adélaïde tried to flee, she felt a huge heat behind her and a brief pain. \
+        "As Adelaide tried to flee, she felt a huge heat behind her and a brief pain. \
         She did not have time to realise that she was about to die."
     elif(daughterDragonDecision == 19):
         dragon "What use do I have for that?"
         ade "Umm.."
         dragon "But alright, let’s try it! I just happen to have some meat on the side."
-        "Adélaïde realised that she may not have thought this through when the dragon dragged \
+        "Adelaide realised that she may not have thought this through when the dragon dragged \
         a human corpse out of his cave and set it atop a tree trunk."
         "Horrified and unable to resolve herself to “cut the meat”, \
         she could not react when the dragon pushed her on top of it and send them ablaze."
@@ -96,7 +96,7 @@ label daughterParentsFleeToDragon_decision:
         dragon "..."
         dragon "Are you serious?"
         ade "Yes! I am a really talented story teller!"
-        "Before the dragon’s incredulous look, Adélaïde hastened to launched into an elaborate story of \
+        "Before the dragon’s incredulous look, Adelaide hastened to launched into an elaborate story of \
         a dragon guarding a princess and roasting all the knight attracted by the famed promised to her rescuer."
         "After a time, she managed to get the dragon quite taken with the idea and ready to put it into practice."
         "It was not such a horrible life. The dragon fed her roasted lambs and fishes and \

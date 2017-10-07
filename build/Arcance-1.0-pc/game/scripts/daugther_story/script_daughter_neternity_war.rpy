@@ -67,7 +67,7 @@ label daughterWarAgainstNeternity:
         "When he brought his army to the meeting, she could not protest. \
         And when he demanded that in exchange of his protection of Arcance \
         she marry him to join their kingdom, she also had to accept."
-        "It was with a heavy heart that Adélaïde resigned herself to what awaited her."
+        "It was with a heavy heart that Adelaide resigned herself to what awaited her."
         scene background princeCastle
         "Her dread proved to be founded as King Frederic proved to be even more \
         controlling and insulting than her parents, humiliating her in public and brutal in private."
